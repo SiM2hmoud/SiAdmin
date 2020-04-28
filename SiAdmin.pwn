@@ -184,14 +184,6 @@ public OnPlayerUpdate(playerid)
         SetTimer("KickPlayer", 200, false);
         print(string);
     }
-    if(GetPlayerWeapon(playerid) == 36 || 37 || 38)
-    {
-        format(string, sizeof(string), "[SERVER]: %s has been kicked from the server for using Weapons hack!", pname);
-        SendClientMessageToAll(CRed, string);
-        TogglePlayerControllable(playerid, false);
-        SetTimer("KickPlayer", 200, false);
-        print(string);
-    }
     return 1;
 }
 public OnVehiclePaintjob(playerid, vehicleid, paintjobid) 
